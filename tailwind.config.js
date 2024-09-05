@@ -6,8 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      borderColor: {
+        'edge':'rgba(237, 237, 237, 0.15)',
+      },
+      backgroundImage: {
+        'tf-hero': 'linear-gradient(180deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.00) 64.23%)',
+      },
       fontFamily: {
-        spacegrotesk: ['Space Grotesk', 'sans-serif'],  
+        spacegrotesk: ['Space Grotesk', 'sans-serif'],
+        geistmono: ['Geist Mono','sans-serif'],
+        geist: ['Geist','sans-serif'], 
       },
     },
   },
