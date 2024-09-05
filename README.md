@@ -1,1 +1,4 @@
-# transfinitte-24
+# Transfinitte-24
+
+## Tech-Stack
+- React+Tailwind CSS
