@@ -1,0 +1,41 @@
+import 
+{adithya,
+aroones,
+kavin,
+samarth,
+subham,
+vcanna,
+} from "../assets"
+
+export const judges = [
+    {
+        id:"0",
+        name:"Adithya",
+        imgurl:adithya,
+    },
+    {
+        id:"1",
+        name:"Aroones",
+        imgurl:aroones,
+    },
+    {
+        id:"2",
+        name:"Kavin",
+        imgurl:kavin,
+    },
+    {
+        id:"3",
+        name:"Samarth",
+        imgurl:samarth,
+    },
+    {
+        id:"4",
+        name:"Subham",
+        imgurl:subham,
+    },
+    {
+        id:"5",
+        name:"Vishnu",
+        imgurl:vcanna,
+    },
+];

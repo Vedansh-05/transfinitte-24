@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors:{
+        offwhite: '#EDEDED',
+      },
       borderColor: {
         'edge':'rgba(237, 237, 237, 0.15)',
       },

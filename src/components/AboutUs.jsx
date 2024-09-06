@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className='flex flex-row gap-12'>
                 <div className='flex w-auto h-auto flex-col items-start gap-[37px] flex-shrink-0'>
                     <div className='flex w-auto h-auto items-start'>
-                        <div className='flex w-auto h-[73px] flex-col justify-center text-[#EDEDED] font-geist text-[3rem] font-normal leading-[60px]'>
+                        <div className='flex w-auto h-[73px] flex-col justify-center text-offwhite font-geist text-[3rem] font-normal leading-[60px]'>
                         About us
                         </div>
                         <div className='flex w-auto h-auto flex-col justify-center text-[#A1A1A1] font-geistmono font-[500] leading-[28px]'>(1)</div>
