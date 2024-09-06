@@ -17,7 +17,7 @@ export default {
       },
       fontFamily: {
         spacegrotesk: ['Space Grotesk', 'sans-serif'],
-        geistmono: ['Geist Mono','sans-serif'],
+        geistmono: ['Geist Mono'],
         geist: ['Geist','sans-serif'], 
       },
     },

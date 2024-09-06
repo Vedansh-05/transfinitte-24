@@ -39,3 +39,62 @@ export const judges = [
         imgurl:vcanna,
     },
 ];
+
+
+export const sponsors = [
+    {
+        id:0,
+        name:'Platinum Sponsors',
+        data:[{
+            id:0,
+            name:'Krishhhhh',
+            imgurl:aroones,
+        },
+        {
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+        {
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+    ],
+    },
+    {
+        id:0,
+        name:'Sponsors',
+        data:[{
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+        {
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+        {
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+        {
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+        {
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+        {
+            id:0,
+            name:'Krishhhhh',
+            imgurl:'',
+        },
+    ],
+    },
+];

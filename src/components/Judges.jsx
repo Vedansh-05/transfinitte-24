@@ -22,8 +22,8 @@ const Judges = () => {
                         </div>
                         <div className='flex flex-col items-start gap-4 self-stretch'>
                             <ul>
-                            {judges.map((item)=>(
-                                <li key={item.id} className='text-offwhite font-geist text-[32px] not-italic font-normal leading-8'>{item.name}
+                            {judges.map((judge)=>(
+                                <li key={judge.id} className='text-offwhite font-geist text-[32px] not-italic font-normal leading-8'>{judge.name}
                                 </li>
                             ))}
                             </ul>
@@ -31,22 +31,20 @@ const Judges = () => {
                     </div>
                     <div className='flex w-[739.6px] items-start content-start gap-5 flex-shrink-0 flex-wrap'>
                             <div className='grid grid-cols-3 grid-flow-row gap-5'>
-                                {/* <div className='w-[233.2px] h-[253.18px] flex-shrink-0 border border-dashed border-[#454545]'> */}
-                                    {judges.map((item)=>(
-                                        <div className='flex content-center items-center w-[233.2px] h-[253.18px] overflow-hidden object-contain relative'>
+                                    {judges.map((judge)=>(
+                                        <div className='flex content-center items-center w-[233.2px] h-[253.18px] overflow-hidden object-cover relative border border-dashed border-[#454545]'>
                                             <img
-                                            src={item.imgurl}
-                                            alt={item.name}
+                                            src={judge.imgurl}
+                                            alt={judge.name}
                                             width='100%'
-                                            height='auto'
-                                            className=''/>
-                                            <div className='text-offwhite font-geistmono text-[13px] font-normal uppercase absolute bottom-2 right-0 text-right bg-transparent'>
-                                                {item.name}
+                                            height='100%'
+                                            className='object-cover w-full h-full'/>
+                                            <div className='text-offwhite font-geistmono text-[13px] font-normal uppercase absolute bottom-0 right-0 text-right bg-transparent'>
+                                                {judge.name}
                                             </div>
                                         </div>
                                     ))}
                                 </div>
-                            {/* </div> */}
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ const Header = () => {
       <div className='flex flex-row gap-1'>
         <div className='text-white text-center text-xl font-spacegrotesk font-medium leading-5 tracking-[-0.1px] uppercase'> Transfinitte</div>
         <div>
-          <a>
+          <a> 
             <img 
             src={numbersvg} 
             alt='24'

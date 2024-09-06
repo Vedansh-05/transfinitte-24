@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import AboutUs from './components/AboutUs'
 import Judges from './components/Judges'
+import Sponsors from './components/Sponsors'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <AboutUs />
       <Judges />
+      <Sponsors />
     </>
   )
 }
