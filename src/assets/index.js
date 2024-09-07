@@ -10,6 +10,9 @@ import kavin from "./images/kavin.jpeg"
 import samarth from "./images/samarth.jpeg"
 import subham from "./images/subham.jpeg"
 import vcanna from "./images/vishnucharan.jpeg"
+import groups from "./svg/groups.svg"
+import prizes from "./svg/prizes.svg"
+import ps from "./svg/ps.svg"
 
 export {
     numbersvg,
@@ -24,4 +27,7 @@ export {
     samarth,
     subham,
     vcanna,
+    groups,
+    prizes,
+    ps,
     };

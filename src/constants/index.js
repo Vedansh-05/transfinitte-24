@@ -5,6 +5,9 @@ kavin,
 samarth,
 subham,
 vcanna,
+groups,
+prizes,
+ps,
 } from "../assets"
 
 export const judges = [
@@ -43,58 +46,97 @@ export const judges = [
 
 export const sponsors = [
     {
-        id:0,
+        id:"0",
         name:'Platinum Sponsors',
         data:[{
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:aroones,
         },
         {
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
         {
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
     ],
     },
     {
-        id:0,
+        id:"0",
         name:'Sponsors',
         data:[{
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
         {
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
         {
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
         {
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
         {
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
         {
-            id:0,
+            id:"0",
             name:'Krishhhhh',
             imgurl:'',
         },
     ],
     },
 ];
+
+export const faqs = [
+    {
+        id: "0",
+        question: "Why is arunesh not arunesh but aroones?",
+        answer: "Coz its how i like it.",
+    },
+    {
+        id: "1",
+        question: "Why is arunesh not arunesh but aroones?",
+        answer: "Coz its how i like it.",
+    },
+    {
+        id: "2",
+        question: "Why is arunesh not arunesh but aroones?",
+        answer: "Coz its how i like it.",
+    },
+]
+
+export const counter = [
+    {
+        id:"0",
+        icon: groups,
+        count: 696,
+        label: "Participants"
+    },
+    {
+        id:"1",
+        icon: prizes,
+        count: 69,
+        label: "Problem Statements"
+    },
+    {
+        id:"2",
+        icon: ps,
+        count: 6969,
+        label: "Prize Money"
+    },
+]
