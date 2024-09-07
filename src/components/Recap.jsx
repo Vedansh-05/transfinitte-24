@@ -15,9 +15,9 @@ const Recap = () => {
                 </div>
             </div>
             <CounterStats stats={counter} />
-            {/* <div className='text-offwhite text-right font-geist text-[32px] not-italic font-normal leading-8'>
-                
-            </div> */}
+            <div className='text-offwhite text-right font-geist text-[32px] not-italic font-normal leading-8'>
+                Images
+            </div>
         </div>
     </div>
   )

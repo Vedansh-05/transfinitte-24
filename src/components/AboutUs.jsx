@@ -21,7 +21,7 @@ const AboutUs = () => {
                     This isn't just a competition—it's a platform to create real solutions and make an impact. Join us, and be a part of something that truly matters.
                     </div>
                 </div>
-                <div className='w-[675px] h-[450px]'>
+                <div className='w-[675px] h-[450px] border border-dashed border-[#454545]'>
                         <img
                         src={aboutus}
                         />
