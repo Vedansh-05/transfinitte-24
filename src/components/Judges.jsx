@@ -21,7 +21,7 @@ const Judges = () => {
                             </div>
                         </div>
                         <div className='flex flex-col items-start gap-4 self-stretch'>
-                            <ul>
+                            <ul className='flex flex-col items-start gap-4 self-stretch'>
                             {judges.map((judge)=>(
                                 <li key={judge.id} className='text-offwhite font-geist text-[32px] not-italic font-normal leading-8'>{judge.name}
                                 </li>
