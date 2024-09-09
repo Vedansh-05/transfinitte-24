@@ -1,27 +1,43 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import AboutUs from './components/AboutUs'
-import Judges from './components/Judges'
-import Sponsors from './components/Sponsors'
-import Faq from './components/Faq'
-import Recap from './components/Recap'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
+import Judges from './components/Judges';
+import Sponsors from './components/Sponsors';
+import Faq from './components/Faq';
+import Recap from './components/Recap';
+import Gallery from './components/Gallery';
+import Timeline from './components/Timeline';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header />
-      <Hero />
-      <AboutUs />
-      <Judges />
-      <Sponsors />
-      <Faq />
-      <Recap />
-    </>
-  )
+    <Router>
+
+      <Routes>
+        {/* Route for home page (renders everything except Recap) */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Hero />
+              <AboutUs />
+              <Judges />
+              <Sponsors />
+              {/* <Timeline /> */}
+              <Faq />
+              <Recap />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/timeline" element={<Timeline />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

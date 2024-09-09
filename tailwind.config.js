@@ -7,6 +7,16 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			spaceGrotesk: ['Space Grotesk'],
+			geistmono: ['Geist Mono'],
+			geist: ['Geist'],
+			montserrat: ['Montserrat'],
+			syne: ['Syne'],
+		},
+		backgroundImage: {
+			'grid': "url('./src/assets/svg/grid.svg')",
+		},
   		colors: {
   			offwhite: '#EDEDED',
   			background: 'hsl(var(--background))',

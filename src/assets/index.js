@@ -15,6 +15,8 @@ import prizes from "./svg/prizes.svg"
 import ps from "./svg/ps.svg"
 import grid from './svg/grid.svg'
 import arrow from './svg/arrow.svg'
+import admin from './svg/adminblock.svg'
+import logo from './svg/tlogo.svg'
 
 export {
     numbersvg,
@@ -34,4 +36,6 @@ export {
     ps,
     grid,
     arrow,
+    admin,
+    logo
     };
