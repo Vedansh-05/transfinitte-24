@@ -1,5 +1,5 @@
 import React from 'react'
-import {  numbersvg } from '../assets'
+import {  arrow, numbersvg } from '../assets'
 
 const Header = () => {
   return (
@@ -17,17 +17,24 @@ const Header = () => {
         </div>
       </div>
       <div className='w-[220px] h-[20px] flex gap-[42px]'>
-        <div className='flex flex-row gap-0 justify-center items-center'>
+        <div className='flex flex-row gap-1 justify-center items-center'>
           <div className='text-offwhite text-center font-geistmono text-[14px] not-italic font-bold leading-5 tracking-[0.35px] uppercase'>INSTAGRAM</div>
-          <div className='text-offwhite font-sfpro text-[14px] not-italic font-bold leading-[20px] tracking-[0.35px] uppercase'>􀄯</div>
+          <div>
+          <img
+            src={arrow}
+            className='max-w-none w-fit'/>
+          </div>        
         </div>
-        <div className='flex flex-row gap-0 justify-center items-center'>
+        <div className='flex flex-row gap-1 justify-center items-center'>
           <div className='text-offwhite text-center font-geistmono text-[14px] not-italic font-bold leading-5 tracking-[0.35px] uppercase'>REGISTER</div>
-          <div className='text-offwhite font-sfpro text-[14px] not-italic font-bold leading-[20px] tracking-[0.35px] uppercase'>􀄯</div>
+          <div>
+            <img
+            src={arrow}
+            className='max-w-none w-fit'/>
           </div>
         </div>
-
       </div>
+    </div>
   )
 }
 
