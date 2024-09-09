@@ -13,6 +13,8 @@ import vcanna from "./images/vishnucharan.jpeg"
 import groups from "./svg/groups.svg"
 import prizes from "./svg/prizes.svg"
 import ps from "./svg/ps.svg"
+import grid from './svg/grid.svg'
+import arrow from './svg/arrow.svg'
 
 export {
     numbersvg,
@@ -30,4 +32,6 @@ export {
     groups,
     prizes,
     ps,
+    grid,
+    arrow,
     };
