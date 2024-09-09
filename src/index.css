@@ -14,3 +14,13 @@ body {
   padding: 0;
 }
 
+.bg-grid {
+  background-repeat: repeat-y; /* Repeat along the height */
+  background-size: 100% auto; /* Take full width */
+  background-position: center;
+  transform: rotate(90deg); /* Rotate the SVG by 90 degrees */
+}
+
+.font-feature-disable {
+  font-feature-settings: 'liga' off, 'clig' off;
+}

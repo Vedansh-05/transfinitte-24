@@ -140,3 +140,30 @@ export const counter = [
         label: "Prize Money"
     },
 ]
+
+export const timeline = [
+    {
+        id: 0,
+        heading: 'TIFU',
+        content: '5:00 PM- Group',
+        side: 'left',
+    },
+    {
+        id: 1,
+        heading: 'TIFU',
+        content: '6:00 PM- Scient',
+        side: 'right',
+    },
+    {
+        id: 2,
+        heading: 'TIFU',
+        content: '7:00 PM- Home',
+        side: 'left',
+    },
+    {
+        id: 3,
+        heading: 'TIFU',
+        content: '8:00 PM- General',
+        side: 'right',
+    },
+]
