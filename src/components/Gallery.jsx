@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'dat.gui'
-import VirtualScroll from 'virtual-scroll'
+import VirtualScroll from 'virtual-scroll'  
 
 // const vertexShader = `
 //     varying vec2 vUv;
@@ -34,7 +34,11 @@ function App() {
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
       const renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.shadowMap.enabled = true;
       renderer.setSize(window.innerWidth, window.innerHeight);
+      // renderer.setClearColor(0xFFFFFF);
+      const textureLoader = new THREE.TextureLoader();
+      // scene.background = textureLoader.load(aroones);
       mountRef.current.appendChild(renderer.domElement);
 
       const orbits = new OrbitControls(camera, renderer.domElement);
@@ -63,6 +67,7 @@ function App() {
       planeMesh.position.y =-4;
       scene.add(planeMesh);
       planeMesh.rotation.x = -0.5 * Math.PI;
+      planeMesh.receiveShadow = true
 
 
       const sphereGeometry = new THREE.SphereGeometry(4,50,50);
@@ -73,6 +78,7 @@ function App() {
       sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
       sphereMesh.position.set(7,0,0);
       scene.add(sphereMesh);
+      sphereMesh.castShadow = true;
 
       const gridHelper = new THREE.GridHelper(30);
       scene.add(gridHelper);
@@ -82,6 +88,16 @@ function App() {
 
       const directionalLight = new THREE.DirectionalLight(0xFFFFFF, 0.8);
       scene.add(directionalLight);
+      directionalLight.castShadow = true;
+      directionalLight.shadow.camera.top = 12;
+      
+      const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight, 10);
+      scene.add(directionalLightHelper);
+      directionalLight.position.set(-8,50,0);
+
+      const DirectionalLightShadowhelper = new THREE.CameraHelper(directionalLight.shadow.camera);
+      scene.add(DirectionalLightShadowhelper);
+
 
       const gui = new dat.GUI();
       const options = {
