@@ -59,7 +59,7 @@ export default {
   			}
   		},
   		borderColor: {
-  			edge: 'rgba(237, 237, 237, 0.15)'
+  			edge: 'rgba(237, 237, 237, 0.15)',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
