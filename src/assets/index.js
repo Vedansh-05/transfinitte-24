@@ -14,7 +14,8 @@ import groups from "./svg/groups.svg"
 import prizes from "./svg/prizes.svg"
 import ps from "./svg/ps.svg"
 import grid from './svg/grid.svg'
-import arrow from './svg/arrow.svg'
+import arrowwh from './svg/arrowwhite.svg'
+import arrowbl from './svg/arrowblack.svg'
 import admin from './svg/adminblock.svg'
 import logo from './svg/tlogo.svg'
 
@@ -35,7 +36,8 @@ export {
     prizes,
     ps,
     grid,
-    arrow,
+    arrowwh,
+    arrowbl,
     admin,
     logo
     };
