@@ -9,7 +9,6 @@ const Judges = () => {
                 <div className='flex w-[1342px] h-auto py-[70px] px-[46px] justify-between items-start content-start gap-y-[92px] flex-wrap border-r border-l border-r-edge border-l-edge bg-black'>
                     <div className='flex w-[1000px] h-auto py-1 px-0 content-center items-center gap-2'>
                         <div className='text-[#EDEDED] font-geist text-[64px] font-normal leading-[64px] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
-
                     </div>
                     <div className='flex w-[1250px] justify-start items-start gap-[187.4px] flex-shrink-0'>
                         <div className='flex w-[323px] flex-col justify-start items-start gap-[84px] flex-shrink-0'>
