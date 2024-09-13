@@ -25,7 +25,9 @@ const Judges = () => {
                                 <ul className='flex flex-col items-start gap-4 self-stretch'>
                                 {judges.map((judge)=>(
                                     <li key={judge.id}
-                                    className={`text-offwhite font-geist text-[32px] not-italic font-normal leading-8 transition-opacity duration-300 ${hoveredJudge === judge.id ? 'opacity-100' : 'opacity-50'}`}>{judge.name}
+                                    className={`text-offwhite font-geist text-[32px] not-italic font-normal leading-8 transition-opacity duration-300 select-none cursor-default ${hoveredJudge === judge.id ? 'opacity-100' : 'opacity-50'}`}
+                                    onMouseEnter={() => setHoveredJudge(judge.id)}
+                                    onMouseLeave={() => setHoveredJudge(null)}>{judge.name}
                                     </li>
                                 ))}
                                 </ul>
@@ -34,14 +36,16 @@ const Judges = () => {
                         <div className='flex w-[739.6px] items-start content-start gap-5 flex-shrink-0 flex-wrap'>
                             <div className='grid grid-cols-3 grid-flow-row gap-5'>
                                 {judges.map((judge)=>(
-                                    <div className='flex content-center items-center w-[233.2px] h-[253.18px] overflow-hidden object-cover relative border border-dashed border-[#454545]'>
+                                    <div className='flex content-center items-center w-[233.2px] h-[253.18px] overflow-hidden object-cover relative border border-dashed border-[#454545] cursor-default'
+                                    onMouseEnter={() => setHoveredJudge(judge.id)}
+                                    onMouseLeave={() => setHoveredJudge(null)}>
                                         <img
                                         src={judge.imgurl}
                                         alt={judge.name}
                                         width='100%'
                                         height='100%'
-                                        className='object-cover w-full h-full grayscale hover:grayscale-0 hover:scale-105 transition-transform duration-300'/>
-                                        <div className='text-offwhite font-geistmono text-[13px] font-normal uppercase absolute bottom-0 right-0 text-right bg-transparent'>
+                                        className={`object-cover w-full h-full grayscale transition-transform duration-300 ${hoveredJudge === judge.id ? 'grayscale-0 scale-105' : 'grayscale' }`}/>
+                                        <div className='text-offwhite font-geistmono text-[13px] font-normal uppercase absolute bottom-0 right-0 text-right bg-transparent select-none cursor-default'>
                                             {judge.name}
                                         </div>
                                     </div>
