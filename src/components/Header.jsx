@@ -30,7 +30,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className='w-[220px] h-[20px] flex gap-[42px] mr-[48px] justify-center items-center'>
+      <div className='w-[220px] h-[20px] flex gap-[36px] mr-[48px] justify-center items-center'>
         <a href='https://www.instagram.com/tc_nitt/' target="_blank" rel="noopener noreferrer">
           <button className='flex flex-row gap-1 justify-center items-center'>
               <div className='text-offwhite text-center font-geistmono text-[14px] not-italic font-bold leading-5 tracking-[0.35px] uppercase'>INSTAGRAM</div>
