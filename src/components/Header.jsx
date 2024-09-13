@@ -7,7 +7,7 @@ const Header = () => {
   const handleClick = () => {
     toast("Coming Soon", {
           
-      description:"Sunday, December 03, 2023 at 9:00 AM",// Custom style for description
+      description:"Tuesday, 8 October 2024, 9:00 AM",// Custom style for description
       style: {
         backgroundColor: '#EDEDED', 
         color: '#000',    

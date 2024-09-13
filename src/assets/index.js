@@ -28,6 +28,7 @@ import arrowwh from './svg/arrowwhite.svg'
 import arrowbl from './svg/arrowblack.svg'
 import admin from './svg/adminblock.svg'
 import logo from './svg/tlogo.svg'
+import tffooter from './svg/tf-footer.svg'
 
 export {
     numbersvg,
@@ -59,5 +60,6 @@ export {
     charged,
     tezos,
     bharatX,
-    crewsphere
+    crewsphere,
+    tffooter
     };
