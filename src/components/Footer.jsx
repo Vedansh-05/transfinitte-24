@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col items-start gap-4'>
                     <div className='text-white font-geist text-[24px] not-italic font-medium tracking-[-0.24px]'>Problem Statement</div>
-                    <a className='text-white font-geist text-[18px] not-italic font-light leading-normal tracking-[-0.18px] underline' href='https://drive.google.com/file/d/1jjjwgRhEHz8pLegoh0GjU5KTq7Ni5zAs/view'>2023 Problem Statement Archive</a>
+                    <a className='text-white font-geist text-[18px] not-italic font-light leading-normal tracking-[-0.18px] underline' href='https://drive.google.com/file/d/1jjjwgRhEHz8pLegoh0GjU5KTq7Ni5zAs/view' target="_blank" rel="noopener noreferrer">2023 Problem Statement Archive</a>
                 </div>
                 <div className='text-[#939393] font-geist text-[16px] not-italic leading-normal tracking-[-0.16px]'>© 2024 TRANSFINITTE. All Rights Reserved.</div>
             </div>
@@ -41,8 +41,8 @@ const Footer = () => {
                         <div className='text-white font-geist text-[32px] not-italic font-medium leading-normal tracking-[-0.32px]'>Socials</div>
                         <div className='flex flex-col items-start gap-[6px] self-stretch'>
                             <a className='text-white font-geist text-[24px] not-italic font-normal leading-normal tracking-[-0.24px]' href=''>Twitter</a>
-                            <a className='text-white font-geist text-[24px] not-italic font-normal leading-normal tracking-[-0.24px]' href='https://www.instagram.com/tc_nitt/'>Instagram</a>
-                            <a className='text-white font-geist text-[24px] not-italic font-normal leading-normal tracking-[-0.24px]' href='https://in.linkedin.com/company/technical-council-nit-trichy'>LinkedIn</a>
+                            <a className='text-white font-geist text-[24px] not-italic font-normal leading-normal tracking-[-0.24px]' href='https://www.instagram.com/tc_nitt/' target="_blank" rel="noopener noreferrer">Instagram</a>
+                            <a className='text-white font-geist text-[24px] not-italic font-normal leading-normal tracking-[-0.24px]' href='https://in.linkedin.com/company/technical-council-nit-trichy' target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </div>
                     </div>
                 </div>

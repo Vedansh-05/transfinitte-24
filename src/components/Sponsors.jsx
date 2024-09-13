@@ -12,15 +12,13 @@ const Sponsors = () => {
         {sponsors.map((category)=>(
           <div key={category.id} className='flex w-[1220px flex-col items-start gap-[50px]'>
             <div className='text-offwhite text-right font-geist text-[32px] not-italic font-normal leading-8'>{category.name}</div>
-            <div className='grid grid-cols-3 grid-flow-row gap-[10px]'>
+            <div className='flex flex-row items-center justify-between gap-8 w-full'>
               {category.data.map((sponsor)=>(
-                <div key={sponsor.id} className='flex w-[400px] h-[317px] flex-col items-start gap-2 self-stretch border border-solid border-[#EDEDED66]'>
+                <div key={sponsor.id} className='flex flex-col items-start gap-2 self-stretch'>
                   <img
                   src={sponsor.imgurl}
                   alt={sponsor.name}
-                  width='100%'
-                  height='100%'
-                  className='object-cover w-full h-full' />
+                  className='w-fit h-fit grayscale ' />
                 </div>
               ))}
             </div>
