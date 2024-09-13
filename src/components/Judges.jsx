@@ -32,13 +32,13 @@ const Judges = () => {
                     <div className='flex w-[739.6px] items-start content-start gap-5 flex-shrink-0 flex-wrap'>
                             <div className='grid grid-cols-3 grid-flow-row gap-5'>
                                     {judges.map((judge)=>(
-                                        <div className='flex content-center items-center w-[233.2px] h-[253.18px] overflow-hidden object-cover relative border border-dashed border-[#454545]'>
+                                        <div className='flex content-center items-center w-[233.2px] h-[253.18px] overflow-hidden object-cover relative border border-dashed border-[#454545] hover:scale-110 transition-all duration-300'>
                                             <img
                                             src={judge.imgurl}
                                             alt={judge.name}
                                             width='100%'
                                             height='100%'
-                                            className='object-cover w-full h-full'/>
+                                            className='object-cover w-full h-full grayscale hover:grayscale-0'/>
                                             <div className='text-offwhite font-geistmono text-[13px] font-normal uppercase absolute bottom-0 right-0 text-right bg-transparent'>
                                                 {judge.name}
                                             </div>

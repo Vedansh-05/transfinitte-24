@@ -4,12 +4,22 @@ import registertext from "./svg/register-text.svg"
 import tfhero from "./svg/tf-hero.svg"
 import bubble from "./svg/bubble.svg"
 import aboutus from "./images/aboutus.jpeg"
-import adithya from "./images/adithya.jpeg"
-import aroones from "./images/aroones.jpeg"
-import kavin from "./images/kavin.jpeg"
-import samarth from "./images/samarth.jpeg"
-import subham from "./images/subham.jpeg"
-import vcanna from "./images/vishnucharan.jpeg"
+import anand from "./images/Anand Kumar.jpg"
+import anirudh from "./images/anirudh.jpg"
+import ayush from "./images/ayush.jpeg"
+import ram from "./images/ram.jpeg"
+import kumar from "./images/kumar.jpg"
+import subash from "./images/subash.jpg"
+import rakesh from "./images/rakesh.jpeg"
+import adwaith from "./images/adwaith.jpeg"
+import mudit from "./images/mudit.jpeg"
+import geeks from "./images/gfg.png"
+import netcon from "./images/netcon.png"
+import boeing from "./images/boeing.png"
+import charged from "./images/charged.png"
+import tezos from "./images/tezos.png"
+import crewsphere from "./images/crewsphere.png"
+import bharatX from "./svg/bharatX.svg"
 import groups from "./svg/groups.svg"
 import prizes from "./svg/prizes.svg"
 import ps from "./svg/ps.svg"
@@ -26,12 +36,15 @@ export {
     tfhero,
     bubble,
     aboutus,
-    adithya,
-    aroones,
-    kavin,
-    samarth,
-    subham,
-    vcanna,
+    anand,
+    anirudh,
+    ayush,
+    ram,
+    kumar,
+    rakesh,
+    adwaith,
+    subash,
+    mudit,
     groups,
     prizes,
     ps,
@@ -39,5 +52,12 @@ export {
     arrowwh,
     arrowbl,
     admin,
-    logo
+    logo,
+    geeks,
+    netcon,
+    boeing,
+    charged,
+    tezos,
+    bharatX,
+    crewsphere
     };
