@@ -10,11 +10,11 @@ import Recap from './components/Recap';
 import Gallery from './components/Gallery';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
+import { Toaster } from './components/ui/sonner';
 
 function App() {
   return (
     <Router>
-
       <Routes>
         {/* Route for home page (renders everything except Recap) */}
         <Route
@@ -30,6 +30,7 @@ function App() {
               <Faq />
               <Recap />
               <Footer />
+              <Toaster />
             </>
           }
         />
