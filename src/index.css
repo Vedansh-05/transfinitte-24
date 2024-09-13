@@ -26,3 +26,6 @@ body {
   font-feature-settings: 'liga' off, 'clig' off;
 }
 
+.footer-links{
+  background: rgba(255, 255, 255, 0.10);
+}
