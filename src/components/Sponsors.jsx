@@ -10,18 +10,20 @@ const Sponsors = () => {
           <div className='flex w-[27.303px] h-[20.5px] flex-col justify-center text-[#A1A1A1] font-[500] not-italic font-geistmono leading-[28px]'>(3)</div>
         </div>
         {sponsors.map((category)=>(
-          <div key={category.id} className='flex w-[1220px flex-col items-start gap-[50px]'>
+          <div key={category.id} className='flex w-[1220px] flex-col items-start gap-[50px]'>
             <div className='text-offwhite text-right font-geist text-[32px] not-italic font-normal leading-8'>{category.name}</div>
-            <div className='flex flex-row items-center justify-between gap-8 w-full'>
-              {category.data.map((sponsor)=>(
-                <div key={sponsor.id} className='flex flex-col items-start gap-2 self-stretch'>
-                  <img
-                  src={sponsor.imgurl}
-                  alt={sponsor.name}
-                  className='w-fit h-fit grayscale ' />
-                </div>
-              ))}
-            </div>
+            {/* <div className='flex flex-row items-center justify-between gap-8 w-full bg-blue-500'> */}
+              <div className='flex items-center justify-around gap-[10px] self-stretch flex-wrap'>
+                {category.data.map((sponsor)=>(
+                  <div key={sponsor.id} className='flex flex-col items-start gap-2 self-stretch'>
+                    <img
+                    src={sponsor.imgurl}
+                    alt={sponsor.name}
+                    className='w-fit h-fit grayscale ' />
+                  </div>
+                ))}
+              </div>
+            {/* </div> */}
           </div>
         ))}
       </div>

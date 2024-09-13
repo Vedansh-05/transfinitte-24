@@ -72,60 +72,34 @@ export const judges = [
 export const sponsors = [
     {
         id:"0",
-        name:'Platinum Sponsors',
+        name:'Past Sponsors',
         data:[{
             id:"0",
             name:'Geeks For Geeks',
             imgurl:geeks,
         },
         {
-            id:"0",
+            id:"1",
             name:'Netcon',
             imgurl:netcon,
         },
         {
-            id:"0",
+            id:"2",
             name:'Boeing',
             imgurl:boeing,
         },
-    ],
-    },
-    {
-        id:"0",
-        name:'Sponsors',
-        data:[{
-            id:"0",
-            name:'Charged',
-            imgurl:charged,
-        },
         {
-            id:"0",
+            id:"3",
             name:'tezos',
             imgurl:tezos,
         },
         {
-            id:"0",
+            id:"4",
             name:'BharatX',
             imgurl:bharatX,
         },
-        {
-            id:"0",
-            name:'Crewsphere',
-            imgurl:crewsphere,
-        },
-        // {
-        //     id:"0",
-        //     name:'Krishhhhh',
-        //     imgurl:'',
-        // },
-        // {
-        //     id:"0",
-        //     name:'Krishhhhh',
-        //     imgurl:'',
-        // },
     ],
-    },
-];
+}]
 
 export const faqs = [
     {
