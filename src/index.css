@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background: #000; */
 }
 
 body {
@@ -28,4 +27,13 @@ body {
 
 .footer-links{
   background: rgba(255, 255, 255, 0.10);
+}
+
+.tf-hero {
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.00) 64.23%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
