@@ -166,3 +166,45 @@ export const timeline = [
         side: 'right',
     },
 ]
+
+// constants/index.js
+
+export const timelineData = [
+    {
+      title: '5 PM',
+      content: {
+        text: 'Inauguration',
+        images: [
+          'https://assets.aceternity.com/templates/startup-1.webp',
+          'https://assets.aceternity.com/templates/startup-2.webp',
+          'https://assets.aceternity.com/templates/startup-3.webp',
+          'https://assets.aceternity.com/templates/startup-4.webp',
+        ]
+      },
+    },
+    {
+      title: '5:30 PM',
+      content: {
+        text: 'Hack Starts',
+        images: [
+          'https://assets.aceternity.com/pro/hero-sections.png',
+          'https://assets.aceternity.com/features-section.png',
+          'https://assets.aceternity.com/pro/bento-grids.png',
+          'https://assets.aceternity.com/cards.png',
+        ]
+      },
+    },
+    {
+      title: '8:00 PM',
+      content: {
+        text: 'Dinner',
+        images: [
+          'https://assets.aceternity.com/pro/hero-sections.png',
+          'https://assets.aceternity.com/features-section.png',
+          'https://assets.aceternity.com/pro/bento-grids.png',
+          'https://assets.aceternity.com/cards.png',
+        ]
+      },
+    },
+  ];
+  

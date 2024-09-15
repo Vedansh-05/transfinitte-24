@@ -1,87 +1,101 @@
-import React from 'react'
-import { grid } from '../assets';
+import {
+  useScroll,
+  useTransform,
+  motion,
+} from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
+import { timelineData } from '../constants'; // Adjust the path as necessary
 
 const Timeline = () => {
+  const ref = useRef(null);
+  const containerRef = useRef(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (ref.current) {
+      const rect = ref.current.getBoundingClientRect();
+      setHeight(rect.height);
+    }
+  }, [ref]);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start 10%", "end 90%"],
+  });
+
+  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+
   return (
-    <div className='flex items-center justify-center'>
-      <div className='text-white flex w-[1342px] h-screen py-9 px-[46px] bg-repeat bg-auto justify-start items-start border-r border-l border-r-edge border-l-edge ' style={{backgroundImage: `url(${grid})`}}>
-        {/* <div class="min-h-screen bg-red-700 py-6 flex flex-col justify-center sm:py-12"> */}
-          <div class="py-3 w-full px-2 sm:px-0 text-gray-700 bg-transparent"> {/*Spaces*/}
-            <div class="relative text-gray-700 antialiased text-sm font-semibold bg-transparent"> {/*To contain the timeline */}
-              <div class="hidden sm:block w-1 bg-gray-500 absolute h-full left-1/2 transform -translate-x-1/2"></div> {/*Line*/}
-              <div class="mt-6 sm:mt-0 sm:mb-12 bg-transparent">
-                <div class="flex flex-col sm:flex-row items-center bg-transparent"> {/*Contents */}
-                  <div class="flex justify-start w-full mx-auto items-center bg-transparent"> {/* Right side space*/}
-                    <div class="w-1/2 bg-transparent flex justify-end items-start p-11">
-                      <div class="p-4 bg-black rounded shadow w-auto h-auto text-offwhite font-geist text-[32px] not-italic font-medium tracking-[-1.45px] text-left">
-                        6PM- Hack Starts
-                      </div>
-                    </div>
-                  </div>
-                  <div class="rounded-full bg-black border-gray-500 border-4 w-8 h-8 absolute top-0 left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                    </svg>
-                  </div>
+    <div className='flex items-center justify-center mb-[-8px]'>
+      <div className='flex flex-col items-start justify-center'>
+        <div className="flex w-[1342px] h-auto py-[70px] px-[46px] justify-between items-start content-start gap-y-[92px] flex-wrap border-r border-l border-r-edge border-l-edge bg-black md:px-10"
+        ref={containerRef}>
+        <div className="flex flex-col justify-start max-w-7xl mx-auto py-4 px-4 md:px-8 lg:px-10">
+          <div className="mb-4 text-white font-geist text-[64px] font-normal leading-[60px]">
+            Timeline
+          </div>
+          <div className="text-[#A1A1A1] font-geistmono text-[18px] not-italic font-normal leading-[28px]">
+            The provided timeline is tentative and subject to change as necessary.
+          </div>
+          <div className="text-white font-geist text-[32px] font-normal leading-[60px]">
+            27th October
+          </div>
+        </div>
+
+        <div ref={ref} className="relative mx-auto pb-20">
+          {timelineData.map((item, index) => (
+            <div key={index} className=" flex justify-start pt-10 md:pt-40 md:gap-10">
+              <div className="sticky flex flex-col md:flex-row z-40 items-center top-36 self-start max-w-xs lg:max-w-sm md:w-full">
+                <div className="h-8 w-8 absolute left-4 rounded-full bg-offwhite flex items-center justify-center">
+                  <div className="h-4 w-4 rounded-full bg-offwhite border border-dashed border-gray-600 " />
+                </div>
+                <div className="hidden md:block text-offwhite font-geist text-[32px] not-italic font-normal leading-8 transition-opacity duration-300 select-none cursor-default md:pl-20 md:text-5xl">
+                  {item.title}
                 </div>
               </div>
-  
-              <div class="mt-6 sm:mt-0 sm:mb-12">
-                <div class="flex flex-col sm:flex-row items-center">
-                  <div class="flex justify-end w-full mx-auto items-center">
-                    <div class="w-full sm:w-1/2 sm:pl-8">
-                      <div class="p-4 bg-white rounded shadow">
-                        My life got flipped turned upside down,
-                      </div>
-                    </div>
-                  </div>
-                  <div class="rounded-full bg-black border-gray-500 border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg> */}
-                  </div>
+
+              <div className="flex flex-col gap-4 relative pl-20 pr-4 md:pl-4 w-full">
+                <div className="md:hidden block text-5xl mb-4 text-left font-bold text-offwhite dark:text-neutral-500">
+                  {item.title}
                 </div>
-              </div>
-  
-              <div class="mt-6 sm:mt-0 sm:mb-12">
-                <div class="flex flex-col sm:flex-row items-center">
-                  <div class="flex justify-start w-full mx-auto items-center">
-                    <div class="w-full sm:w-1/2 sm:pr-8">
-                      <div class="p-4 bg-white rounded shadow">
-                        And I'd like to take a minute, just sit right there,
-                      </div>
-                    </div>
+                {Array.isArray(item.content.text) ? 
+                (item.content.text.map((text, idx) => (<div key={idx} className="text-[32px] mb-4">{text}</div>))) : 
+                (
+                <div className="text-[#A1A1A1] font-geistmono text-5xl not-italic font-normal leading-[28px] ">{item.content.text}</div>)
+                }
+                <div className="flex justify-around flex-wrap gap-5">
+                {item.content.images && item.content.images.map((image, idx) => (
+                  <div className="w-full aspect-auto sm:w-1/2 lg:w-1/3">
+                  <img
+                    key={idx}
+                    src={image}
+                    alt={`Image ${idx + 1}`}
+                  />
                   </div>
-                  <div class="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="mt-6 sm:mt-0">
-                <div class="flex flex-col sm:flex-row items-center">
-                  <div class="flex justify-end w-full mx-auto items-center">
-                    <div class="w-full sm:w-1/2 sm:pl-8">
-                      <div class="p-4 bg-white rounded shadow">
-                        I'll tell you how I became the Prince of a town called Bel Air.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                    </svg>
-                  </div>
+                ))}
                 </div>
               </div>
             </div>
+          ))}
+          <div
+            style={{
+              height: height + "px",
+            }}
+            className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]">
+            <motion.div
+              style={{
+                height: heightTransform,
+                opacity: opacityTransform,
+              }}
+              className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            />
           </div>
-        {/* </div> */}
+        </div>
+        </div>
       </div>
     </div>
-    );
-}
+  );
+};
 
-export default Timeline
+export default Timeline;

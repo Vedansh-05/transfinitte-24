@@ -29,6 +29,9 @@ import arrowbl from './svg/arrowblack.svg'
 import admin from './svg/adminblock.svg'
 import logo from './svg/tlogo.svg'
 import tffooter from './svg/tf-footer.svg'
+import instagram from './svg/instagram.svg'
+import linkedin from './svg/linkedin.svg'
+import x from './svg/x.svg'
 
 export {
     numbersvg,
@@ -61,5 +64,8 @@ export {
     tezos,
     bharatX,
     crewsphere,
-    tffooter
+    tffooter,
+    instagram,
+    linkedin,
+    x
     };
