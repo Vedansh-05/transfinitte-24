@@ -15,9 +15,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className='flex items-end justify-center'>
+    <div className='flex items-end justify-center bg-black'>
       <div className='flex w-[1342px] h-[300px] py-9 px-0 flex-col items-start gap-[36px] border-r border-l border-r-edge border-l-edge bg-black'>
-        <div className='flex justify-center items-center gap-[24px] self-stretch tf-footer'>
+        <div className='flex justify-center items-center self-stretch tf-footer'>
             <img
             src={tffooter}/>
         </div>

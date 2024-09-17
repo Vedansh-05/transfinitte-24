@@ -4,7 +4,7 @@ import { judges } from '../constants'
 const Judges = () => {
     const [hoveredJudge, setHoveredJudge] = useState(null);
     return (
-        <div className='flex items-center justify-center mb-[-8px]'>
+        <div className='flex items-center justify-center mb-[-8px] bg-black '>
             <div className='flex flex-col items-start justify-center'>
                 <div className='flex w-[1342px] h-auto py-[70px] px-[46px] justify-between items-start content-start gap-y-[92px] flex-wrap border-r border-l border-r-edge border-l-edge bg-black'>
                     <div className='flex w-[1000px] h-auto py-1 px-0 content-center items-center gap-2'>
