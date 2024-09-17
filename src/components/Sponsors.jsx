@@ -3,7 +3,7 @@ import { sponsors } from '../constants'
 
 const Sponsors = () => {
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center bg-black'>
       <div className='flex w-[1342px] py-9 px-[46px] flex-col items-start gap-[46px] bg-black border-r border-l border-r-edge border-l-edge'>
         <div className='flex items-start'>
           <div className='text-offwhite font-geist text-[64px] font-normal not-italic leading-[60px] '>Sponsors</div>

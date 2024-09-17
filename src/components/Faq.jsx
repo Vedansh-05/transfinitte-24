@@ -10,7 +10,7 @@ import { faqs } from '@/constants'
   
 const Faq = () => {
   return (
-    <div className='flex items-center justify-center'>
+    <div className='flex items-center justify-center bg-black'>
         <div className='flex w-[1342px] py-9 px-[46px] justify-between items-end border-r border-l border-r-edge border-l-edge'>
             <div className='flex w-full h-auto flex-col items-start gap-[37px] flex-shrink-0'>
                 <div className='flex w-auto h-auto items-start'>
