@@ -27,7 +27,7 @@ const Timeline = () => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className='flex items-center justify-center mb-[-8px] bg-black'>
+    <div className='flex items-center justify-center bg-black mb-[-8px]'>
       <div className='flex flex-col items-start justify-center'>
         <div className="flex w-[1342px] h-auto py-[70px] px-[46px] justify-between items-start content-start flex-wrap border-r border-l border-r-edge border-l-edge bg-black md:px-10"
         ref={containerRef}>
